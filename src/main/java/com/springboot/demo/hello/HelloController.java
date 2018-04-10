@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-	@RequestMapping(value="/hello", method = RequestMethod.GET)
+	@RequestMapping(value="/hello")
 	public String hi() {
 		String canonicalHost = "", hostName = "", hostAddress = "";
 		try {
